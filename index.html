@@ -1,36 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
-    
-<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
 
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-primary': '#F85559',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+           <!-- font-awesome -->
+           <script src="https://kit.fontawesome.com/0499ecdc55.js" crossorigin="anonymous"></script>
+    <style>
+        .font-family {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./images/logo.png">
 </head>
-<body>
+
+<body class="font-family">
     <!-- Header Section -->
-    <header>
+    <header class="md:container md:mx-auto lg:bg-color-primary  rounded-full ">
 
         <!-- Nav Bar -->
+        <!-- max-w-screen-xl max-auto my-10 py-5 px-8 md:px-16 lg:px-24 -->
+        <nav class="">
 
-        <nav>
-            
+            <div class="navbar justify-between max-lg:flex-row-reverse px-5 ">
+                <div class="">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 
+                             w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-7 h-7 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 ml-[-10rem] z-[1] p-2 shadow text-black rounded-box w-52">
+                            <!-- Search Box For Responsive -->
+                            <div class="input-box">
+                                <input type="text" placeholder="Search here" class="input input-bordered h-7 max-w-[170px] rounded-full text-black"/>
+                              <i class="fa-solid fa-magnifying-glass  text-black search
+                              "></i>
+                        </div>
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits ss</a></li>
+                           
+                        </ul>
+                        
+                    </div>
+
+                    <div class="navbar-center hidden lg:flex text-white text-2xl  font-medium	">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <!-- logo -->
+                <div> <img src="./images/logo.png" class="w-[54px]" alt="">
+                    <a class="btn btn-ghost normal-case text-3xl font-bold lg:text-white">daisyUI</a>
+                </div>
+
+                <!-- Search box for large device -->
+                <div class="input-box max-lg:hidden">
+                        <input type="text" placeholder="Search here" class="input input-bordered h-10 max-w-xs rounded-full text-black"/>
+                      <i class="fa-solid fa-magnifying-glass  text-black search
+                      "></i>
+                </div>
+
+            </div>
+
         </nav>
     </header>
     <main></main>
     <footer></footer>
 </body>
+
 </html>
