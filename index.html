@@ -55,7 +55,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-7 h-7 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 ml-[-10rem] z-[1] p-2 shadow text-black rounded-box w-52">
+                            class="menu menu-sm dropdown-content mt-3 ml-[-10rem] z-[1] p-2 shadow text-white rounded-box w-52">
                             <!-- Search Box For Responsive -->
                             <div class="input-box">
                                 <input type="text" placeholder="Search here" class="input input-bordered h-7 max-w-[170px] rounded-full text-black"/>
@@ -100,10 +100,43 @@
         </nav>
     </header>
     <!-- main part -->
-    <main>
+    <main class="md:container md:max-auto w-[80%] m-auto">
         <!-- Banner section -->
-        <section>
-
+        <section class="my-10">
+       <div class="w-full m-auto">
+           
+        <div class="carousel ">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="/images/banner1.png" class="" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="/images/banner2.png" class="" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="/images/banner3.png" class="" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="/images/banner4.png" class="" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+               <img src="" alt="">
+        </div>
         </section>
     </main>
     <footer></footer>
